@@ -35,6 +35,13 @@ const TikTokIcon = ({ size = 20, className = "" }) => (
   </svg>
 );
 
+/* --- LOGO COMPONENT --- */
+const Logo = ({ size = 16, className = "" }) => (
+  <div className={`bg-slate-900 text-amber-500 p-2 rounded-full shadow-sm ${className}`}>
+    <Home size={size} aria-hidden="true" />
+  </div>
+);
+
 /**
  * REVEAL COMPONENT
  */
@@ -104,9 +111,7 @@ const ChatSimulation = ({ active, onClick }) => {
     >
       {/* WhatsApp Header - Compact */}
       <div className="bg-[#075e54] p-2 flex items-center gap-2 text-white">
-        <div className="w-6 h-6 bg-slate-900 text-amber-500 rounded-full flex items-center justify-center shadow-sm border border-white/10">
-          <Home size={10} aria-hidden="true" />
-        </div>
+        <Logo size={10} className="w-6 h-6 flex items-center justify-center border border-white/10" />
         <div>
           <p className="text-[10px] font-bold">Davidoff PM</p>
           <p className="text-[8px] opacity-80">{step >= 2 && step < 3 ? 'typing...' : 'online'}</p>
@@ -178,9 +183,7 @@ const IMessageSimulation = ({ active, onClick }) => {
     >
       {/* iOS Header - Compact */}
       <div className="bg-white/80 backdrop-blur-md p-2 border-b border-slate-100 flex flex-col items-center z-10 sticky top-0">
-        <div className="w-6 h-6 bg-slate-900 text-amber-500 rounded-full flex items-center justify-center shadow-sm mb-0.5">
-          <Home size={10} aria-hidden="true" />
-        </div>
+        <Logo size={10} className="w-6 h-6 flex items-center justify-center mb-0.5" />
         <p className="text-[9px] text-slate-500 font-medium">Davidoff PM</p>
       </div>
 
@@ -610,9 +613,7 @@ const App = () => {
       <nav className="fixed top-0 left-0 right-0 z-40 bg-transparent py-4 transition-all duration-300 pointer-events-none">
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center gap-2 pointer-events-auto bg-white/90 backdrop-blur-md p-2 rounded-full shadow-sm cursor-pointer border border-white/20" onClick={() => scrollToId('home')}>
-            <div className="bg-slate-900 text-amber-500 p-2 rounded-full shadow-sm">
-              <Home size={16} aria-hidden="true" />
-            </div>
+            <Logo size={16} />
             <div className="leading-none pr-2">
               <h1 className="text-sm font-serif font-bold tracking-tight text-slate-900">DAVIDOFF</h1>
             </div>
