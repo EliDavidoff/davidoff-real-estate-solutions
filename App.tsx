@@ -612,10 +612,10 @@ const App = () => {
       {/* MINIMAL TOP NAV */}
       <nav className="fixed top-0 left-0 right-0 z-40 bg-transparent py-4 transition-all duration-300 pointer-events-none">
         <div className="container mx-auto px-4 flex justify-between items-center">
-          <div className="flex items-center gap-2 pointer-events-auto bg-white/90 backdrop-blur-md p-2 rounded-full shadow-sm cursor-pointer border border-white/20" onClick={() => scrollToId('home')}>
+          <div className="flex items-center gap-2 pointer-events-auto bg-white/90 backdrop-blur-md px-4 py-2 rounded-full shadow-sm cursor-pointer border border-white/20 min-w-fit" onClick={() => scrollToId('home')}>
             <Logo size={16} />
-            <div className="leading-none pr-2">
-              <h1 className="text-sm font-serif font-bold tracking-tight text-slate-900">DAVIDOFF</h1>
+            <div className="leading-none whitespace-nowrap">
+              <h1 className="text-xs font-serif font-bold tracking-tight text-slate-900">DAVIDOFF REAL ESTATE</h1>
             </div>
           </div>
           <div className="hidden md:flex items-center gap-3 pointer-events-auto bg-white/90 backdrop-blur-md px-2 py-2 rounded-full shadow-sm border border-white/20">
