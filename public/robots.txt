@@ -7,3 +7,4 @@ Sitemap: https://davidoffpm.com/sitemap.xml
 # Crawl-delay
 Crawl-delay: 1
 
+

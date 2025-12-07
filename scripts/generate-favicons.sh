@@ -16,3 +16,4 @@ done
 echo ""
 echo "✅ All favicons generated successfully!"
 
+
